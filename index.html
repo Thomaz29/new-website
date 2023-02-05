@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="short icon" href="image/short_icon.png">
+    <link rel="stylesheet" href="globalstyle.css">
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 </head>
 <body>
 
@@ -229,101 +234,91 @@
 
 
 
-    <!--Banner-->
+    <!--Banner New-->
 
-    <div class="banner">
-
-        <h1>Special Offer</h1>
-
-        <div class="banner_center">
-            <h2>50%<br><span>Off</span></h2>
+    <section id="discount" data-aos="fade-up">
+        <div class="container">
+            <div class="discount__wrapper">
+                <div class="discount__images">
+                <div class="discount__img1">
+                    <img src="food-5.png" alt="Food img">
+                </div>
+                <div class="discount__img2">
+                    <img src="food-4.png" alt="Food img">
+                </div>
+                <div class="discount__img3">
+                    <img src="food-3.png" alt="Food img">
+                </div>
+                </div>
+                <div class="discount__info">
+                <h3 class="discount__text">20% OFF</h3>
+                <h3 class="discount__title">Demo Dish For Discount</h3>
+                <h3 class="discount__price">
+                    <span class="discount__oldPrice">$45</span>
+                    <span class="discount__newPrice">$35</span>
+                </h3>
+                <div class="discount__stars">
+                    <img src="3star.png" alt="3 stars">
+                
+            </div>
         </div>
+  </section>
+  <!-- End Discount Section -->
+    
 
-        <a href="#" class="banner_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
+
+
+
+    <!--Popular Dishes-->
+
+    <section class="food" id="food">
+
+    <div class="heading">  
+        <span>Our Signature Dish</span>
 
     </div>
 
+    <div class="swiper food-slider">
 
+        <div class="swiper-wrapper">
 
-
-    <!--Gallery-->
-
-    <div class="gallery">
-
-        <h1>Popular<span>Gallery</span></h1>
-
-        <div class="gallery_box">
-
-            <div class="gallery_image">
-                <img src="image/gallary_1.jpg">
+            <div class="swiper-slide slide" data-name="food-1">
+                <img src="image/food-img-1.png" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$49.99</div>
             </div>
 
-            <div class="gallery_image">
-                <img src="image/gallary_2.jpg">
+            <div class="swiper-slide slide" data-name="food-2">
+                <img src="image/food-img-2.png" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$49.99</div>
             </div>
 
-            <div class="gallery_image">
-                <img src="image/gallary_3.webp">
+            <div class="swiper-slide slide" data-name="food-3">
+                <img src="image/food-img-3.png" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$49.99</div>
             </div>
 
-        </div>
-
-    </div>
-
-
-
-    <!--Offer-->
-
-    <div class="offer">
-
-        <div class="offer_box">
-
-            <div class="offer_card_1">
-
-                <div class="offer_img">
-                    <img src="image/offer_1.jpg">
-                </div>
-
-                <div class="offer_tag">
-
-                    <h2>Triplae Food</h2>
-                    <h1>40%</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Itaque quibusdam quas distinctio sit? Corrupti 
-                        necessitatibus modi nobis?
-                    </p>
-                    <a href="#" class="offer_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
-
-                </div>
-
+            <div class="swiper-slide slide" data-name="food-4">
+                <img src="image/food-img-4.png" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$49.99</div>
             </div>
 
-            <div class="offer_card_2">
-
-                <div class="offer_img">
-                    <img src="image/offer_2.png">
-                </div>
-
-                <div class="offer_tag">
-
-                    <h2>Buy 2 pizza and get a <br>free Drink</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Itaque quibusdam quas distinctio sit? Corrupti 
-                        necessitatibus modi nobis?
-                    </p>
-                    <a href="#" class="offer_btn"><i class="fa-solid fa-burger"></i>Order Now</a>
-
-                </div>
-
+            <div class="swiper-slide slide" data-name="food-5">
+                <img src="image/food-img-5.png" alt="">
+                <h3>delicious food</h3>
+                <div class="price">$49.99</div>
             </div>
 
         </div>
 
+        <div class="swiper-pagination"></div>
+
     </div>
 
-
+</section>
 
 
    
@@ -584,7 +579,14 @@
 
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+<script>
 
     
 </body>
